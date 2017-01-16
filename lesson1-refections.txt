@@ -1,0 +1,41 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    首先，使用diff命令可以帮助我们快速定位改动位置。此外，diff命令还可以帮助我们
+发现一些容易忽略的细节改动。
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    通过阅读历史版本，我们可以了解文件的发展过程，它最初的设计目标和方法，这可以
+帮助我们分析接下来的目标。
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    手动提交具有更多的灵活性，我们可以选择合适的时间提交新的版本。不过，手动提交
+也有很多坏处，首先，保存更改是一件非常繁琐的事情，我们可能会忘记。另一方面，什么
+时候提交也是一个问题。
+    相比之下，我们可以不用考虑保存代码的事情，如果我们使用自动提交。自动提交可以
+帮助我们解决很多繁琐的细节，例如文件的命名。
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    同时保存多个文件一方面可以使用户根据时间来划分版本，同一时间提交的文件可以被
+认为是同一版本。否则，如果一次只修改一个文件，而恰巧改动频率很大，将很难找出相同
+版本的文件。
+
+How can you use the commands git log and git diff to view the history of files?
+
+   “git log”需要在版本文件夹下使用；“git diff”需要提供两个版本id。
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    git允许我们回溯到之前的版本，这样我们就能够找到错误的源头，然后进行更改。
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    开发程序啦，把git加入简历啦。

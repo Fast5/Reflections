@@ -1,0 +1,33 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+    创建了一个后缀名git的文件，这应该表示着当前文件夹是一个版本库。
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+	
+    缓存区文件应该存在在内存中，而工作目录和版本库都是保存在硬盘上。而且修改缓存区
+的文件不会直接影响原始文件，能够保护原始文件。
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+    在修改完文件并保存后，文件会自动加入到缓存区。使用git add将文件加入待提交队列，
+使用git commit添加修改介绍。git diff可以对比工作目录和缓存区文件的区别；git diff --staged
+可以对比缓存区文件和最新一次提交文件的区别；git status可以查看缓存区文件状态。
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+     
+    在添加新的实验性功能时，或者与原版本并列的版本，例如不同语言的版本时，可以使用分支
+功能。分支功能允许开发者在不影响主版本的情况下对程序进行更改，并且可以合并不同的版本程序，
+这使得开发者们可以分工开发几个独立的模块在同一时间。
+
+How do the diagrams help you visualize the branch structure?
+
+    图表提供了绘制分支结构体的必要信息。
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+What are the pros and cons of Git鈥檚 automatic merging vs. always doing merges
+manually?
